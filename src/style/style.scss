@@ -1,9 +1,23 @@
+@import url("blocks/header.scss");
+@import url("blocks/search.scss");
+@import url("blocks/categories.scss");
+@import url("blocks/footer.scss");
+@import url("pages/index.scss");
+@import url("pages/summaries.scss");
+@import url("pages/vacancies.scss");
+@import url("filters.scss");
+@import url("advert.scss");
+@import url("form.scss");
+
+
 body{
     margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
+    padding-top: 0;
+    padding-left: 3%;
+    padding-right: 3%;
     position: relative;
+    font-family: Roboto;
+    font-weight: 600;
 }
 
 h1,
@@ -15,15 +29,31 @@ h6{
     margin: 0;
 }
 
+ul{
+    margin: 0;
+    padding: 0;
+}
+
 li{
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.wrapper{
-    width: 100%;
-    height: 100%;
-    text-align: center;
+a{
+    text-decoration: none;
 }
 
+button {
+    font-weight: 600;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content {
+    min-height: calc(100vh - 255px);
+    margin-bottom: 30px;
+}

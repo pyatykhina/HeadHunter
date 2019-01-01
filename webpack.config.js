@@ -36,12 +36,24 @@ module.exports = {
                 warnings: false
             }
         }),
-        new ExtractTextPlugin('styles.css'),
+        new ExtractTextPlugin('style.css'),
         new HtmlPlugin({
             title: 'headhunter',
             template: 'index.hbs',
             filename: 'index.html',
             chunks: ['index']
+        }),
+        new HtmlPlugin({
+            title: 'headhunter',
+            template: 'vacancies.hbs',
+            filename: 'vacancies.html',
+            chunks: ['vacancies']
+        }),
+        new HtmlPlugin({
+            title: 'headhunter',
+            template: 'summaries.hbs',
+            filename: 'summaries.html',
+            chunks: ['summaries']
         }),
         new CleanWebpackPlugin(['dist'])
     ]

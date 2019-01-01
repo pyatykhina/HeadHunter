@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{{htmlWebpackPlugin.options.title}}</title>
+        <link rel="shortcut icon" href="src/images/logo.png" type="image/x-icon">
+        <link rel='stylesheet' href='style.css'>
+    </head>
+    <body>
+        <div class="container">
+            {{> "./src/templates/blocks/header.hbs"}}
+            <div class="content summaries">
+                {{> "./src/templates/blocks/search.hbs"}}
+                {{> "./src/templates/blocks/categories.hbs"}}
+                <div class="summaries__main">
+                    {{> "./src/templates/filters.hbs"}}
+                    {{> "./src/templates/advert.hbs"}}
+                </div>
+            </div>
+            {{> "./src/templates/blocks/footer.hbs"}}
+        </div>
+    </body>
+</html>
